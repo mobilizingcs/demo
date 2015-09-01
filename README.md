@@ -5,7 +5,7 @@ A quick page to offer demos of enabled ohmage frontends with sample/demo data. T
 Feel free to take a look in this repository under the `data` dir to find a csv per campaign, as well as photos that belong to the responses!
 
 ## Supporting this data with your ohmage frontend
-A few small (but of course, important) changes are needed to support this data with your frontend.  At this time, you'll need to make sure your frontend supports the use of ohmage response data in csv file format.  Once you've done that, just make a GET request to `/navbar/demo/data/{campaign}/{campaign}demo.csv` (use of `/navbar/` subject to change) instead of the corresponding ohmage `survey_response/read` call. Two sizes of images are also supported (thumb and fullsize) and can be found via their uuid at `/navbar/demo/data/{campaign}/thumbs/{uuid}` or `/navbar/demo/data/{campaign}/images/{uuid}`.
+A few small (but of course, important) changes are needed to support this data with your frontend.  At this time, you'll need to make sure your frontend supports the use of ohmage response data in csv file format.  Once you've done that, just make a GET request to `/navbar/demo/data/{campaign}/{campaign}demo.csv` (use of `/navbar/` subject to change) instead of the corresponding ohmage `survey_response/read` call. Two sizes of images are also supported (thumb and fullsize) and can be found via their uuid at `/navbar/demo/data/{campaign}/thumbs/{uuid}` or `/navbar/demo/data/{campaign}/photos/{uuid}`.
 
 ## Licensing
 The code in this respository is open-source and licensed under the Apache License, version 2.0. The full text of the license may be found at this link: http://www.apache.org/licenses/LICENSE-2.0.
