@@ -26,7 +26,7 @@ $(function(){
 		    "name" : "Trash",
 		    "count" : 2667,
 		    "csv" : "data/trash/trashdemo.csv",
-		    "xml" : "data/trash/trashdemo.xml",
+		    "xml" : "data/trash/trashdemo.xml"
 		}
 	];
 
