@@ -1,0 +1,137 @@
+{
+	"title" : "Advertisement Dashboard",
+	"data" : {
+		"url" : "/navbar/demo/data/media/mediademo.csv"
+	},
+	"item_main" : "Product",
+	"photo" : {
+		"item" : "AdPhoto",
+		"thumb" : "/navbar/demo/data/media/thumbs/{{ AdPhoto }}.jpg",
+		"image" : "/navbar/demo/data/media/photos/{{ AdPhoto }}.jpg"
+	},
+	"modal": [
+		{
+			"title" : "Product?",
+			"item" : "Product"
+		},
+		{
+			"title" : "Advertisement type?",
+			"item" : "AdvertisementType:label"
+		},
+		{
+			"title" : "Product Type?",
+			"item" : "ProductType:label"
+		},
+		{
+			"title" : "Target Audience?",
+			"item" : "TargetAudience"
+		},
+		{
+			"title" : "How much do you want it? (1-5)",
+			"item" : "DesiredLevel"
+		},
+		{
+			"title" : "How does it make you feel?",
+			"item" : "Feeling"
+		}
+	],
+	"datecharts" : [
+		{
+			"title" : "Response Date",
+			"item" : "context:timestamp"
+		}
+	],
+	"hourcharts" : [
+		{
+			"title" : "Response Time",
+			"item" : "context:timestamp"
+		}
+	],
+	"piecharts" : [
+		{
+			"title" : "Advertisement Type",
+			"item" : "AdvertisementType:label",
+			"label" : {
+   			   	"Digital Display" : "Digital"
+			}
+		},
+		{
+			"title" : "Product Type",
+			"item" : "ProductType:label",
+			"label" : {
+				"Food and drinks" : "Food",
+				"Electronics and apps" : "Electronics"
+			}
+		}
+	],
+	"barcharts" : [
+		{
+			"title" : "Desired",
+			"item" : "DesiredLevel"
+		}
+	],
+	"wordclouds" : [
+		{
+			"title" : "Product",
+			"item" : "Product",
+			"resizable" : false,
+			"maxwords" : 50,
+			"height" : 200
+		},
+		{
+			"title" : "Audience",
+			"item" : "TargetAudience",
+			"resizable" : false,
+			"maxwords" : 50,
+			"height" : 200
+		},
+		{
+			"title" : "Feeling",
+			"item" : "Feeling",
+			"resizable" : false,
+			"maxwords" : 50,
+			"height" : 200
+		}
+	],
+	"maps" : [
+		{
+			"item" : {
+				"lat" : "context:location:latitude",
+				"lng" : "context:location:longitude"
+			},
+			"center" : [34.0522222, -118.2427778],
+			"na" : [33.9,-118.5],
+			"zoom" : 9,
+			"clusteroptions" : {
+				"spiderfyOnMaxZoom": true,
+				"showCoverageOnHover": true,
+				"zoomToBoundsOnClick": true
+			},
+			"geojson" : [
+				{
+					"item" : "neighborhood",
+					"title" : "Neighborhoods",
+					"url" : "lib/geojson/la_simplified.min.json"
+				}
+			],
+			"tilelayers": [
+				{
+					"title" : "Standard",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 1
+				},
+				{
+					"title" : "Road",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 997
+				},
+				{
+					"title" : "Minimal",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 22677,
+					"default" : true
+				}
+			]
+		}
+	]
+}

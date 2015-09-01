@@ -1,0 +1,143 @@
+{
+	"title" : "Snack Dashboard",
+	"data" : {
+		"url" : "/navbar/demo/data/snack/snackdemo.csv"
+	},
+	"item_main" : "WhatSnack",
+	"photo" : {
+		"item" : "SnackImage",
+		"thumb" : "/navbar/demo/data/snack/thumbs/{{ SnackImage }}.jpg",
+		"image" : "/navbar/demo/data/snack/photos/{{ SnackImage }}.jpg"
+	},
+	"modal": [
+		{
+			"title" : "What?",
+			"item" : "WhatSnack"
+		},
+		{
+			"title" : "Why?",
+			"item" : "WhySnack"
+		},
+		{
+			"title" : "When?",
+			"item" : "SnackPeriod:label"
+		},
+		{
+			"title" : "With who?",
+			"item" : "WhoYouSnackWith:label"
+		},
+		{
+			"title" : "Where?",
+			"item" : "SnackLocation:label"
+		},
+		{
+			"title" : "Cost?",
+			"item" : "SnackCost:label"
+		},
+		{
+			"title" : "How Healthy? (1-5)",
+			"item" : "HealthyLevel"
+		}
+	],
+	"datecharts" : [
+		{
+			"title" : "Response Date",
+			"item" : "context:timestamp"
+		}
+	],
+	"hourcharts" : [
+		{
+			"title" : "Response Time",
+			"item" : "context:timestamp"
+		}
+	],
+	"piecharts" : [
+		{
+			"title" : "Cost",
+			"item" : "SnackCost:label",
+			"label" : {
+   			   	"Less than $1.00" : "< $1",
+    		  	"$1.00-$3.00" : "$1-$3",
+    		 	"$3.00-$5.00" : "$3-$5",
+    			"$5.00-$7.00" : "$5-7+",
+    			"$7.00-$10.00" : "$7-10",
+    			"More than $10.00" : "$10+"
+			}
+		},
+		{
+			"title" : "When",
+			"item" : "SnackPeriod:label",
+			"label" : {
+   			   	"Mid-morning" : "morning",
+    		  	"Late night" : "night",
+    		 	"Mid-afternoon" : "afternoon",
+    			"Evening" : "evening"
+			}
+		},
+		{
+			"title" : "Where",
+			"item" : "SnackLocation:label"
+		},
+		{
+			"title" : "With Who",
+			"item" : "WhoYouSnackWith:label"
+		}
+	],
+	"barcharts" : [
+		{
+			"title" : "Healthy",
+			"item" : "HealthyLevel"
+		}
+	],
+	"wordclouds" : [
+		{
+			"title" : "Why",
+			"item" : "WhySnack"
+		},
+		{
+			"title" : "What",
+			"item" : "WhatSnack"
+		}
+	],
+	"maps" : [
+		{
+			"item" : {
+				"lat" : "context:location:latitude",
+				"lng" : "context:location:longitude"
+			},
+			"center" : [34.0522222, -118.2427778],
+			"na" : [33.9,-118.5],
+			"zoom" : 9,
+			"clusteroptions" : {
+				"spiderfyOnMaxZoom": true,
+				"showCoverageOnHover": true,
+				"zoomToBoundsOnClick": true
+			},
+			"geojson" : [
+				{
+					"item" : "neighborhood",
+					"title" : "Neighborhoods",
+					"url" : "lib/geojson/la_simplified.min.json"
+				}
+			],
+			"tilelayers": [
+				{
+					"title" : "Standard",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 1
+				},
+				{
+					"title" : "Road",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 997
+				},
+				{
+					"title" : "Minimal",
+					"key" : "2d69a170ad5540f981628a272225958a",
+					"styleId" : 22677,
+					"default" : true
+				}
+			]
+		}
+	]
+}
