@@ -4,29 +4,29 @@ $(function(){
 		    "urn" : "urn:public:snack",
 		    "name" : "Snack",
 		    "count" : 1709,
-		    "csv" : "/ocpu/library/plotbuilder/demodata/snackdemo.csv",
-		    "xml" : "/ocpu/library/plotbuilder/demodata/snackdemo.xml"
+		    "csv" : "data/snack/snackdemo.csv",
+		    "xml" : "data/snack/snackdemo.xml"
 		},      
 		{
 		    "urn" : "urn:public:media",
 		    "name" : "Media",
 		    "count" : 1025,
-		    "csv" : "/ocpu/library/plotbuilder/demodata/mediademo.csv",
-		    "xml" : "/ocpu/library/plotbuilder/demodata/mediademo.xml"
+		    "csv" : "data/media/mediademo.csv",
+		    "xml" : "data/media/mediademo.xml"
 		},
 		{
 		    "urn" : "urn:public:nutrition",
 		    "name" : "Nutrition",
 		    "count" : 1443,
-		    "csv" : "/ocpu/library/plotbuilder/demodata/nutritiondemo.csv",
-		    "xml" : "/ocpu/library/plotbuilder/demodata/nutritiondemo.xml"
+		    "csv" : "data/nutrition/nutritiondemo.csv",
+		    "xml" : "data/nutrition/nutritiondemo.xml"
 		},
 		{
 		    "urn" : "urn:public:trash",
 		    "name" : "Trash",
 		    "count" : 2667,
-		    "csv" : "/ocpu/library/plotbuilder/demodata/trashdemo.csv",
-		    "xml" : "/ocpu/library/plotbuilder/demodata/trashdemo.xml"
+		    "csv" : "data/trash/trashdemo.csv",
+		    "xml" : "data/trash/trashdemo.xml",
 		}
 	];
 
