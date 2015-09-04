@@ -54,8 +54,8 @@ $(function(){
  
         ul.append($("<li >").addClass('divider')) 
 
-        var csvlink = $("<a />").appendTo($("<li />").appendTo(ul)).append('<span class="glyphicon glyphicon-file"></span> Export Data').attr("href", csvlink);
-        var xmllink = $("<a />").appendTo($("<li />").appendTo(ul)).append('<span class="glyphicon glyphicon-floppy-save"></span> Download XML').attr("href", xmllink);
+        var csvlink = $("<a />").appendTo($("<li />").appendTo(ul)).append('<span class="glyphicon glyphicon-file"></span> Export Data').attr("href", csvlink).attr("target", "_blank");
+        var xmllink = $("<a />").appendTo($("<li />").appendTo(ul)).append('<span class="glyphicon glyphicon-floppy-save"></span> Download XML').attr("href", xmllink).attr("target", "_blank");
 	});
 
 	var table = $('#demotable').DataTable( {
