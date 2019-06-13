@@ -24,7 +24,7 @@ $(function(){
 		{
 		    "urn" : "urn:public:trash",
 		    "name" : "Trash",
-		    "count" : 2667,
+		    "count" : 2631,
 		    "csv" : "data/trash/trashdemo.csv",
 		    "xml" : "data/trash/trashdemo.xml"
 		}
